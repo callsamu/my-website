@@ -1,0 +1,41 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+:root {
+    font-size: 18px;
+    --dark-grey: #25272C;
+    --foreground: #F6F9FC;
+}
+
+html {
+    background-color: #15171C;
+    background-image: url(images/background.jpg);
+    background-size: contain;
+}
+
+body {
+    width: 60%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-right: 4px double var(--foreground);
+    border-left: 4px double var(--foreground);
+    background-color: var(--dark-grey);
+    color: var(--foreground);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.menu {
+    padding: 0.5rem;
+    width: auto;
+    background-color: var(--foreground);
+    color: var(--dark-grey);
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 15px;
+    }
+    body {
+        width: 80%;
+    }
+}
